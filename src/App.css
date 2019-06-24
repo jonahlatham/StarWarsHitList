@@ -2,32 +2,73 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appHeader {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.starWarsCards {
+  background: gray;
+  color: black;
+  width: 200px;
+  height: 180px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.innerCard {
+  background: black;
+  color: red;
+  width: 150px;
+  height: 100px;
+  margin: auto;
+  margin-top: 5px;
+  padding-top: 7px;
+  border-radius: 5px;
+}
+
+.killButton {
+  background: darkred;
+  color: whitesmoke;
+  border: inset;
+  border-color: darkred;
+  border-width: 3px;
+  margin-top: 12px;
+}
+
+.killButton:active {
+  border: outset;
+  border-color: darkred;
+}
+
+.killButton:focus {
+  outline: none;
+}
+
+.leftSide {
+  background: rgb(150, 170, 189);
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightSide {
+  background: rgb(97, 109, 122);
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  background: black;
+  color: firebrick;
+  width: 50%;
+}
+
+.words {
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
