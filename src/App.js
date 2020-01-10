@@ -21,10 +21,10 @@ class App extends Component {
   }
   handleKill = (obj) => {
     const hitList = this.state.starwarsguys.filter((e, i) => {
-      if (obj.url === "https://swapi.co/api/people/4/"){
+      if (obj.url === "https://swapi.co/api/people/4/") {
         alert('Darth Vader killed you')
       } else {
-      }return e.url !== obj.url
+      } return e.url !== obj.url
 
     })
     const deadList = [...this.state.deadCards, obj]
